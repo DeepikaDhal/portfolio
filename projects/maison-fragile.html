@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maison Fragile — Deepika Dhal</title>
+  <link rel="stylesheet" href="/src/styles.css" />
   <link rel="stylesheet" href="/src/style-project.css" />
 </head>
+
 <body>
   <div class="project-page">
-    <a class="project-back" href="/">← Back to portfolio</a>
+    <a class="project-back" href="/">← Back</a>
     <h1 class="project-title">Maison Fragile</h1>
+
     <div class="project-meta">
-      <p class="project-description">Maison Fragile is a branding and editorial project exploring the connection between earth, origin, and craftsmanship. I redesigned the logo to reflect these themes and created a brand editorial narrating the product-making process. I also produced and photographed the editorial, ensuring a cohesive and storytelling-driven visual identity.</p>
+      <p class="project-description">Maison Fragile is a branding and editorial project exploring the connection between
+        earth, origin, and craftsmanship. I redesigned the logo to reflect these themes and created a brand editorial
+        narrating the product-making process. I also produced and photographed the editorial, ensuring a cohesive and
+        storytelling-driven visual identity.</p>
       <div class="project-columns">
         <div>
           <h3>Industry</h3>
@@ -23,6 +30,81 @@
         </div>
       </div>
     </div>
+
+    <!-- Hero images -->
+    <figure class="media media--full" style="margin-top: -3dvh;">
+      <img src="/src/portfolio-images/maison-fragile/4.png"
+        alt="Editorial cover: Born from dust, with letters drifting across the page" width="1838" height="1304"
+        loading="eager" />
+    </figure>
+
+    <figure class="media media--full">
+      <img src="/src/portfolio-images/maison-fragile/5.png"
+        alt="Maison Fragile brand editorial" width="1838" height="1304"
+        loading="eager" />
+    </figure>
+
+    <!-- Editorial carousel -->
+    <section class="project-section">
+      <h2>Brand editorial</h2>
+      <div class="carousel" data-carousel role="region" aria-roledescription="carousel"
+        aria-label="Brand editorial spreads">
+        <ul class="carousel__track">
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 of 9">
+            <img src="/src/portfolio-images/maison-fragile/mf1.png" alt="Editorial front" width="1842" height="1308" loading="eager" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 9">
+            <img src="/src/portfolio-images/maison-fragile/mf2.png" alt="Editorial cover" width="1842" height="1308" loading="eager" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 9">
+            <img src="/src/portfolio-images/maison-fragile/7.png" alt="Editorial spread: Life started from dust, beside a close-up of flour" width="1842" height="1308" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 9">
+            <img src="/src/portfolio-images/maison-fragile/8.png" alt="Editorial spread: Hands gathering earth and shaping clay" width="1840" height="1306" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 9">
+            <img src="/src/portfolio-images/maison-fragile/9.png" alt="Editorial spread: Hands holding a white porcelain dish, touch is prayer" width="1840" height="1306" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="6 of 9">
+            <img src="/src/portfolio-images/maison-fragile/10.png" alt="Editorial spread: Dust pattern overlaid on a still life with a vase and bread" width="1840" height="1306" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="7 of 9">
+            <img src="/src/portfolio-images/maison-fragile/11.png" alt="Editorial spread: A field of dust-like particles on a grey background" width="1840" height="1308" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="8 of 9">
+            <img src="/src/portfolio-images/maison-fragile/12.png" alt="Editorial spread: From dust we make, not to perfect but to remember" width="1838" height="1304" loading="lazy" draggable="false" />
+          </li>
+          <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="9 of 9">
+            <img src="/src/portfolio-images/maison-fragile/13.png" alt="Editorial spread: A white plate and a ceramic vase with a flowering sprig" width="1842" height="1308" loading="lazy" draggable="false" />
+          </li>
+        </ul>
+
+        <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous spread">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 15l-3 -3l3 -3" />
+            <path d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" />
+          </svg>
+        </button>
+
+        <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next spread">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#c5c5c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 9l3 3l-3 3" />
+            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z" />
+          </svg>
+        </button>
+
+        <div class="carousel__footer" style="color: #ffffff; margin: 0 40.5dvw 0;">
+          <div class="carousel__dots" role="tablist" aria-label="Choose spread"></div>
+          <!-- data-static keeps your own text instead of the "1 / 9" counter -->
+          <!-- <span class="carousel__count" data-static aria-live="polite">scroll to see more :)</span> -->
+        </div>
+      </div>
+    </section>
   </div>
+
+  <script type="module" src="/src/carousel.js"></script>
 </body>
+
 </html>

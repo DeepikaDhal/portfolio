@@ -2,9 +2,17 @@
     box-sizing: border-box;
 }
 
+/* buttons and inputs don't inherit the font by default */
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
+    font-family: "Kantumruy Pro", system-ui, sans-serif;
     background: #fafafa;
 }
 
@@ -99,6 +107,7 @@ body {
 .tile:hover {
     background: #d13b30;
     z-index: 2;
+    opacity: 1;
 }
 
 .tile-label {
@@ -122,12 +131,23 @@ body {
     background-image: var(--hover-image);
     background-size: cover;
     background-position: center;
-    transform: rotate(-45deg) scale(1.6);
+    transform: rotate(90deg) scale(1.6);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.tile:hover .tile-label {
+.tile:hover::before {
+    opacity: 0;
+}
+
+.tile-label:hover {
+    opacity: 1;
+}
+.tile-label {
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.tile:hover .tile-label,
+.tile:focus-visible .tile-label {
     opacity: 1;
 }
 
